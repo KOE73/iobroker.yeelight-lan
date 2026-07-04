@@ -1,8 +1,12 @@
 {
   "common": {
     "name": "yeelight-lan-direct",
-    "version": "0.3.0",
+    "version": "0.3.1",
     "news": {
+      "0.3.1": {
+        "en": "Built-in remote control tab in Admin: live lamp glow in real color/brightness, capability-gated controls, background-light ring",
+        "ru": "Встроенная вкладка-пульт в Admin: живое свечение реальным цветом и яркостью, элементы управления по возможностям лампы, кольцо фоновой подсветки"
+      },
       "0.3.0": {
         "en": "Standard ioBroker integration: JSON-Config admin (reliable save), native onStateChange command routing, stable id-based object ids, info.connection indicator, adapter-injected core (no global shims)",
         "ru": "Стандартная интеграция ioBroker: админка на JSON-Config (надёжное сохранение), маршрутизация команд через onStateChange, стабильные id-объекты, индикатор info.connection, ядро через adapter без глобальных шимов"
@@ -54,6 +58,16 @@
     "adminUI": {
       "config": "json"
     },
+    "adminTab": {
+      "singleton": false,
+      "name": {
+        "en": "Yeelight remote",
+        "ru": "Пульт Yeelight"
+      },
+      "link": "",
+      "fa-icon": "lightbulb-o"
+    },
+    "materializeTab": true,
     "compact": true,
     "preserveSettings": ["devices"],
     "dependencies": [
