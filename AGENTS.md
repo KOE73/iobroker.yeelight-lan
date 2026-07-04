@@ -77,6 +77,10 @@ Settings page uses **JSON-Config** (`admin/jsonConfig.json`, `io-package.json` �
 
 `main.reportDeviceConnection(host, bool)` aggregates per-device TCP state → standard `info.connection` indicator. Green when ≥1 lamp connected. Set `false` at `onReady` start and in `onUnload`.
 
+## Debugging
+
+See [docs/DEBUG_RU.md](docs/DEBUG_RU.md) for full project structure, lab deployment commands, CLI usage, standalone/browser debugging, and common problems table.
+
 ## Test lamps (lab network)
 
 - `192.168.199.100` — model `ceilc` (CT + background light)
